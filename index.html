@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar styling */
+        body {
+            font-family: "Roboto" , sans-serif;
+            background-color: #ffffff; /* White background */
+            color: #000000; /* Black text */
+        }
+
+        nav {
+            background-color: #ffffff; /* Navbar background color */
+            color: #292727; /* Navbar text color */
+            padding: 10px 20px; /* Adjusted padding */
+            overflow: visible; /* Allow overflow for dropdown */
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Align items vertically */
+            justify-content: space-between; /* Spacing between items */
+        }
+
+        nav a {
+            color: #292727; /* Navbar link text color */
+            text-decoration: none;
+            padding: 10px 10px;
+        }
+
+        nav a:hover {
+            /* background-color: #5d4b9e; Navbar link background color on hover */
+        }
+
+        .logo img {
+            height: 100%; /* Adjusted height for the logo */
+        }
+
+        .navbar-right {
+            display: flex; /* Flexbox for layout */
+            align-items: center; /* Align items vertically */
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute; /* Position dropdown absolutely */
+            top: calc(100% + 10px); /* Position below the dropdown trigger */
+            left: 0; /* Align with the left edge of the dropdown trigger */
+            background-color: #ffffff; /* Dropdown background color */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1000; /* Ensure dropdown is above other content */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #000000; /* Dropdown link text color */
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1; /* Dropdown link background color on hover */
+        }
+        /* .main-img{
+            width:100%;
+            max-height: 80vh;
+        } */
+        .banner{
+            padding: 0 30px;
+        }
+        .main-img {
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+            display: block;
+        }
+
+        .text-container {
+            width: 60%;
+            height:100%;
+            padding: 5rem 3rem 5rem 5rem; /* Add padding for spacing */
+            float: left; /* Align to the left */
+        }
+        .img-container {
+            width: 40%;
+            height: 100%;
+            padding:5rem 5rem 5rem 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-heading{
+            font-weight: 300;
+            color: grey;
+            padding:0 0 1rem 0;
+            font-size: calc(1.375rem + 1.5vw);
+        }
+        .year{
+            font-weight: bold;
+            color:#000;
+            font-size: calc(1.375rem + 1.5vw);
+            padding:1rem 0;
+        }
+        .dates{
+            font-weight: 300;
+            color:#000;
+            padding:1rem 0;
+            font-size: calc(1.3rem + 0.6vw);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="logo.png" alt="Your Logo"></a>
+        </div>
+        <div class="navbar-right">
+            <a href="#">HOME</a>
+            <div class="dropdown">
+                <a href="#">ABOUT</a>
+                <div class="dropdown-content">
+                    <a href="#">University</a>
+                    <a href="#">Math Department</a>
+                    <a href="#">ICMC</a>
+                </div>
+            </div>
+            <a href="#">SPEAKERS</a>
+            <a href="#">COMMITTEE</a>
+            <div class="dropdown">
+                <a href="#">CALL FOR PAPERS</a>
+                <div class="dropdown-content">
+                    <a href="#">Contribution Tracks</a>
+                    <a href="#">Author Guidelines</a>
+                    <a href="#">Submit Your Paper</a>
+                    <a href="#">Accepted Papers</a>
+                </div>
+            </div>
+            <a href="#">REGISTRATION</a>
+            <a href="#">PAST EDITIONS</a>
+            <div class="dropdown">
+                <a href="#">VENUE</a>
+                <div class="dropdown-content">
+                    <a href="#">IIT BHILAI</a>
+                    <a href="#">How To Reach?</a>
+                    <a href="#">Accomodation</a>
+                </div>
+            </div>
+            <a href="#">CONTACT US</a>
+        </div>
+    </nav>
+    <div class="banner">
+        <div class="text-container">
+            <h1 class="main-heading">11th International Conference on Mathematics and Computing</h1>
+            <h1 class="year">ICMC 2025</h1>
+            <h3 class="dates">JANUARY 9-11 | 2025</h3>
+            <!-- <h3 class="dates">Details:TBA</h3> -->
+        </div>
+        <div class="img-container">
+            <img class="main-img" src="mainimg.jpg" alt="Your Logo">
+        </div>
+    </div>
+    <!-- <div>
+        <img class="main-img" src="mainimg.jpg" alt="Your Logo">
+    </div> -->
+</body>
+</html>
