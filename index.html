@@ -7,155 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <style>
-        /* Resetting default margin and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Navbar styling */
-        body {
-            font-family: "Roboto" , sans-serif;
-            background-color: #ffffff; /* White background */
-            color: #000000; /* Black text */
-        }
-
-        nav {
-            background-color: #ffffff; /* Navbar background color */
-            color: #292727; /* Navbar text color */
-            padding: 10px 20px; /* Adjusted padding */
-            overflow: visible; /* Allow overflow for dropdown */
-            display: flex; /* Use flexbox for layout */
-            align-items: center; /* Align items vertically */
-            justify-content: space-between; /* Spacing between items */
-        }
-
-        nav a {
-            color: #292727; /* Navbar link text color */
-            text-decoration: none;
-            padding: 10px 10px;
-        }
-
-        nav a:hover {
-            /* background-color: #5d4b9e; Navbar link background color on hover */
-        }
-
-        .logo img {
-            height: 100%; /* Adjusted height for the logo */
-        }
-
-        .navbar-right {
-            display: flex; /* Flexbox for layout */
-            align-items: center; /* Align items vertically */
-        }
-
-        .dropdown {
-            position: relative;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute; /* Position dropdown absolutely */
-            top: calc(100% + 10px); /* Position below the dropdown trigger */
-            left: 0; /* Align with the left edge of the dropdown trigger */
-            background-color: #ffffff; /* Dropdown background color */
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1000; /* Ensure dropdown is above other content */
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content a {
-            color: #000000; /* Dropdown link text color */
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1; /* Dropdown link background color on hover */
-        }
-        /* .main-img{
-            width:100%;
-            max-height: 80vh;
-        } */
-        .banner{
-            padding: 0 30px;
-        }
-        .main-img {
-            max-width: 100%;
-            max-height: 100%;
-            margin: auto;
-            display: block;
-        }
-
-        .text-container {
-            width: 60%;
-            height:100%;
-            padding: 5rem 3rem 5rem 5rem; /* Add padding for spacing */
-            float: left; /* Align to the left */
-        }
-        .img-container {
-            width: 40%;
-            height: 100%;
-            padding:5rem 5rem 5rem 3rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .main-heading{
-            font-weight: 300;
-            color: grey;
-            padding:0 0 1rem 0;
-            font-size: calc(1.375rem + 1.5vw);
-        }
-        .year{
-            font-weight: bold;
-            color:#000;
-            font-size: calc(1.375rem + 1.5vw);
-            padding:1rem 0;
-        }
-        .dates{
-            font-weight: 300;
-            color:#000;
-            padding:1rem 0;
-            font-size: calc(1.3rem + 0.6vw);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
         <div class="logo">
-            <a href="#"><img src="logo.png" alt="Your Logo"></a>
+            <a href="#"><img src="iitbh.png" alt="Your Logo"></a>
         </div>
         <div class="navbar-right">
-            <a href="#">HOME</a>
+            <a href="index.html">HOME</a>
             <div class="dropdown">
                 <a href="#">ABOUT</a>
                 <div class="dropdown-content">
-                    <a href="#">University</a>
-                    <a href="#">Math Department</a>
-                    <a href="#">ICMC</a>
+                    <a href="about_iitbhilai.html">Institute</a>
+                    <a href="about_mathdept.html">Math Department</a>
+                    <a href="about_icmc.html">ICMC</a>
                 </div>
             </div>
-            <a href="#">SPEAKERS</a>
-            <a href="#">COMMITTEE</a>
+            <a href="speakers.html">SPEAKERS</a>
+            <a href="committee.html">COMMITTEE</a>
             <div class="dropdown">
                 <a href="#">CALL FOR PAPERS</a>
                 <div class="dropdown-content">
                     <a href="#">Contribution Tracks</a>
-                    <a href="#">Author Guidelines</a>
+                    <a href="author_guidelines.html">Author Guidelines</a>
+                    <a href="review.html">Review Process</a>
                     <a href="#">Submit Your Paper</a>
                     <a href="#">Accepted Papers</a>
                 </div>
             </div>
             <a href="#">REGISTRATION</a>
-            <a href="#">PAST EDITIONS</a>
+            <a href="past_editions.html">PAST EDITIONS</a>
             <div class="dropdown">
                 <a href="#">VENUE</a>
                 <div class="dropdown-content">
@@ -164,22 +46,81 @@
                     <a href="#">Accomodation</a>
                 </div>
             </div>
-            <a href="#">CONTACT US</a>
+            <a href="contact-us.html">CONTACT US</a>
         </div>
     </nav>
+
     <div class="banner">
-        <div class="text-container">
+        <div class="banner-container">
             <h1 class="main-heading">11th International Conference on Mathematics and Computing</h1>
-            <h1 class="year">ICMC 2025</h1>
-            <h3 class="dates">JANUARY 9-11 | 2025</h3>
-            <!-- <h3 class="dates">Details:TBA</h3> -->
-        </div>
-        <div class="img-container">
-            <img class="main-img" src="mainimg.jpg" alt="Your Logo">
+            <h2 class="year">ICMC 2025</h2>
+            <h3 class="dates">JANUARY 9-11 | 2025 | IIT Bhilai, India</h3>
         </div>
     </div>
-    <!-- <div>
-        <img class="main-img" src="mainimg.jpg" alt="Your Logo">
-    </div> -->
+    <div class="news">
+        <ul>
+            <li>
+                Note: Conference proceedings of all past editions of ICMC was published in Springer. Proceedings of current edition (ICMC 2025) will be published through a springer series (Waiting for approval).
+            </li>
+        </ul>
+    </div>
+    
+    <div class="counter">
+        <h1 class="timer">Conference Begins in</h1>
+        <div id="countdown"></div>
+    </div>
+    
+    <div class="about-cont">
+        <div class="about-col">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><div class="logo">
+                            <img src="iitbh_logo.png" alt="insti">
+                        </div></td>
+                        <td><div class="info">
+                            <h1 class="year">About the Institute</h1>
+                            <p class="text-content">
+                                Indian Institute of Technology (IIT) Bhilai was established in the state of Chhattisgarh by the Ministry of Education in the year 2016. IIT Bhilai is presently housed in its permanent campus at Kutelabhata, Bhilai, Chhattisgarh. IIT Bhilai offers Bachelor of Technology (BTech), Master of Technology (MTech), Master of Science (MSc) and Doctoral programs (PhD) in various departments.
+                            </p>
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="logo">
+                            <img src="icmc_logo.jpg" alt="insti">
+                        </div></td>
+                        <td><div class="info">
+                            <h1 class="year">About the Conference</h1>
+                            <p class="text-content">
+                                ICMC 2025 aims to bring together both novice and experienced scientists with developers, to meet new colleagues, collect new ideas and establish new cooperation between research groups and provide a platform for researchers from academic and industry to present their original work and exchange ideas, information, techniques and applications in the field of Computational Applied Mathematics.
+                            </p>     
+                        </div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script>
+        // Set the date to countdown to
+        const countdownDate = new Date('2025-01-09T00:00:00').getTime();
+
+        // Update the countdown every second
+        const countdown = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById('countdown').innerHTML = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.getElementById('countdown').innerHTML = 'It is time';
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
