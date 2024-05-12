@@ -7,6 +7,7 @@ body {
     font-family: "Roboto" , sans-serif;
     background-color: #CCC6E6; /* White background */
     color: #4D36A9; /* Black text */
+    margin-top: 8rem;
 }
 /* navbar styles */
 nav {
@@ -16,7 +17,11 @@ nav {
     overflow: visible; 
     display: flex; 
     align-items: center; 
-    justify-content: space-between; 
+    justify-content: space-between;
+    top:0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 nav a {
@@ -76,7 +81,9 @@ nav a {
     background-size: contain;
     background-repeat: no-repeat;
     padding: 4rem 4rem;
-    background-attachment: fixed; 
+    background-attachment: fixed;
+    width:100%;
+    margin-top: 7rem; 
 }
 
 .mathDept{
@@ -185,6 +192,8 @@ nav a {
 /* common styles */
 .container{
     padding: 0 2rem;
+    margin-bottom: 80px;
+    flex: 1;
 }
 .titleStyle1{
     font-weight: 300;
@@ -195,7 +204,7 @@ nav a {
 }
 .titleStyle2{
     font-weight: bold;
-    color:rgb(38,21,119);;
+    color:rgb(38,21,119);
     font-size: calc(1.375rem + 1.5vw);
     padding:0;
     margin:0;
@@ -317,6 +326,7 @@ nav a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-shadow: 0 4px 8px -4px;
     background-color:  #4D36A9;
+    overflow: hidden;
 }
 
 .news ul {
@@ -363,50 +373,78 @@ nav a {
 .footer {
     position: relative;
     width: 100%;
-    background: #000;
+    background: #4D36A9;
     min-height: 100px;
-    padding: 20px 50px;
+    padding: 30px 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: medium;
+    color: #fff;
   }
   .menu__item {
     list-style: none;
+    padding: 3px 0;
   }
   .menu {
     position: relative;
-    display: flex;
-    justify-content: center;
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
-    color: #ffffff;
+    padding: 0 8rem;
   } 
   
   .menu__link {
-    font-size: 1.3rem;
-    color: #fff;
+    /* font-size: 1.3rem; */
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
     text-decoration: none;
     opacity: 1;
     font-weight: 400;
+    color: #fff;
   }
   
   .menu__link:hover {
     opacity: 0.75;
   }
   
-  .footer p {
-    color: #fff;
-    margin: 15px 0 10px 0;
+  .copy {
+    margin: 5rem 0 10px 0;
     font-size: 1.1rem;
     font-weight: 400;
   }
+
+  .quick-links{
+    display: flex;
+    justify-content:center;
+  }
   
+  .footer-header{
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
  
+  .main-footer-header{
+    list-style: none;
+    font-weight: bold;
+    font-size:xx-large;
+    margin-bottom: 10px;
+  }
+
+  .icons{
+    margin-top: 40px;
+  }
+
+  .icons i{
+    padding-right: 10px;
+    font-size: x-large;
+    text-decoration: none;
+    color: #fff;
+  }
   
   
   
