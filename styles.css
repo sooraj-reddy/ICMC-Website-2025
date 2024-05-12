@@ -81,11 +81,12 @@ nav a {
 
 .mathDept{
     background-image: url(sd.jpeg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 0 8rem;
     background-attachment: fixed; 
 }
+
 
 .banner-container {
     width: 100%;
@@ -152,7 +153,7 @@ nav a {
 /* index.html about styles */
 .about-cont {
     display: flex;
-    padding: 1rem 5rem;
+    padding: 2rem 5rem;
 }
 
 .about-col {
@@ -164,15 +165,20 @@ nav a {
     padding: 0 1rem;
 }
 
-.logo img {
+.logo1 img {
     width:100%;
     height:auto;
-    max-width: 20vw; /* Adjust the width as needed */
+    /* max-width: 20vw; Adjust the width as needed */
+}
+.info1{
+    padding: 0 1rem;
 }
 
-.text-content{
+.text1{
     /* font-size: calc(0.5rem + 0.7vw); */
     color: rgb(82,66,147);
+    font-size: calc(0.5rem + 0.7vw);
+    font-weight: 400;
 }
 
 
@@ -351,4 +357,59 @@ nav a {
 
     }
 }
+
+
+/* footer styles */
+.footer {
+    position: relative;
+    width: 100%;
+    background: #000;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .menu__item {
+    list-style: none;
+  }
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    color: #ffffff;
+  } 
+  
+  .menu__link {
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 1;
+    font-weight: 400;
+  }
+  
+  .menu__link:hover {
+    opacity: 0.75;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  
+ 
+  
+  
+  
+  
+  
 
