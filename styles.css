@@ -75,6 +75,14 @@ nav a {
     background-image: url(arya.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+    padding: 4rem 4rem;
+    background-attachment: fixed; 
+}
+
+.mathDept{
+    background-image: url(sd.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
     padding: 0 8rem;
     background-attachment: fixed; 
 }
@@ -343,3 +351,4 @@ nav a {
 
     }
 }
+
