@@ -78,7 +78,7 @@ nav a {
 
 .banner{
     background-image: url(arya.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 4rem 4rem;
     background-attachment: fixed;
