@@ -73,7 +73,6 @@ nav a {
 }
 
 
-
 /* main banner styles */
 
 .banner{
@@ -357,6 +356,12 @@ nav a {
     display: none;
 }
 
+@media screen and (max-width: 768px){
+    .contact-container{
+        flex-direction: column;
+    }
+}
+
 @keyframes scroll {
     from {
         transform: translateX(100%);
@@ -446,6 +451,25 @@ nav a {
     color: #fff;
   }
   
+  @media screen and (max-width: 768px){
+    .quick-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        padding: 0;
+        text-align: center;
+    }
+
+    .menu__item {
+        margin: 10px 0;
+    }
+
+    .copy{
+        margin: 1rem 0;
+    }
+  }
   
   
   
