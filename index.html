@@ -15,6 +15,11 @@
         <div class="logo">
             <a href="#"><img src="iitbh.png" alt="Your Logo"></a>
         </div>
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
         <div class="navbar-right">
             <a href="index.html">HOME</a>
             <div class="dropdown">
@@ -168,6 +173,10 @@
                 document.getElementById('countdown').innerHTML = 'It is time';
             }
         }, 1000);
+
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.navbar-right').classList.toggle('active');
+        });
     </script>
     
 </body>

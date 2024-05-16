@@ -71,6 +71,52 @@ nav a {
 .dropdown-content a:hover {
     background-color: #f1f1f1; 
 }
+@media screen and (max-width: 768px){
+    .navbar-right{
+        display: none;
+    }
+    .logo img {
+        height: 4rem;   
+    }
+    .hamburger{
+        display: none;
+    }
+    .navbar-right.active {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 5rem;
+        left: 0;
+        background-color: #fff; /* Optional: Add background color for better visibility */
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+    
+    .navbar-right a {
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    
+    .hamburger .line {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #4D36A9;
+        margin: 5px;
+    }
+     
+}
+
 
 
 /* main banner styles */
@@ -154,6 +200,8 @@ nav a {
     margin: auto;
     display: block;
 }
+
+
 
 
 /* index.html about styles */
@@ -464,10 +512,13 @@ nav a {
 
     .menu__item {
         margin: 10px 0;
+        font-size: 0.9rem;
     }
 
     .copy{
         margin: 1rem 0;
+        font-size: 0.8rem;
+
     }
   }
   
