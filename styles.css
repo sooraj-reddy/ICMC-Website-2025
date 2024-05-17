@@ -522,7 +522,13 @@ nav a {
     }
   }
   
-  
+ /*contribution-tracks  */
+ .heading-chair{
+    font-weight: bold;
+    color:rgb(82,66,147);
+    font-size: calc(1rem + 1.1vw);
+    margin-bottom: 0;
+ }
   
   
 
