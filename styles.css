@@ -325,8 +325,7 @@ nav a {
     margin: 2rem 10rem;
 }
 
-/* Styles for card container */
-.card-container {
+.card-container1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -334,9 +333,8 @@ nav a {
     max-width: 1200px;
 }
 
-/* Styles for individual cards */
-.col-md-4 {
-    flex: 0 0 calc(33.333%); /* Adjust width as needed */
+.col-md-4-1 {
+    flex: 0 0 calc(33.333%); 
     background-color: #fff;
     display: inline-block;
     border: 1px solid #ddd;
@@ -346,25 +344,23 @@ nav a {
     margin-right: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    box-sizing: border-box; 
 }
 
-/* Hover effect */
-.card:hover {
+.col-md-4-1:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles for card description */
-.card-description {
+.card-description1{
     font-size: 18px;
     font-weight: bold;
+    color: rgb(38,21,119);
     margin: 0;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
     .card {
-        flex-basis: calc(50% - 20px); /* Two cards per row */
+        flex-basis: calc(50% - 20px); 
     }
 }
 
