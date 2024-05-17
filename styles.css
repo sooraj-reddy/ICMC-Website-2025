@@ -321,6 +321,55 @@ nav a {
     margin: 0;
 }
 
+.container1 {
+    margin: 2rem 10rem;
+}
+
+/* Styles for card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Styles for individual cards */
+.col-md-4 {
+    flex: 0 0 calc(33.333%); /* Adjust width as needed */
+    background-color: #fff;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    margin-right: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Hover effect */
+.card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for card description */
+.card-description {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        flex-basis: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+
+
 /* guidelines and review styles */
 .text{
     font-weight: 350;
@@ -438,7 +487,7 @@ nav a {
 .heading-dates{
     text-align: center;
     font-size:xx-large;
-    color: #5332d7;
+    color: rgb(82,66,147);
     font-weight: bolder;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -544,13 +593,7 @@ nav a {
     }
   }
   
- /*contribution-tracks  */
- .heading-chair{
-    font-weight: bold;
-    color:rgb(82,66,147);
-    font-size: calc(1rem + 1.1vw);
-    margin-bottom: 0;
- }
+  
   
   
 
