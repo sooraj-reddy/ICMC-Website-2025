@@ -201,10 +201,6 @@ nav a {
     display: block;
 }
 
-
-
-
-/* index.html about styles */
 .about-cont {
     display: flex;
     padding: 2rem 5rem;
@@ -222,7 +218,6 @@ nav a {
 .logo1 img {
     width:100%;
     height:auto;
-    /* max-width: 20vw; Adjust the width as needed */
 }
 .info1{
     padding: 0 1rem;
@@ -363,6 +358,10 @@ nav a {
         flex-basis: calc(50% - 20px); 
     }
 }
+
+.rmsCard{
+}
+
 
 
 
@@ -588,6 +587,23 @@ nav a {
 
     }
   }
+
+  /* .logo-link{
+    width: 50%;
+    height: auto;
+  } */
+
+  .logo-link img{
+    width: 200px;
+    height: auto;
+  }
+
+
+
+
+
+
+  
   
   
   
