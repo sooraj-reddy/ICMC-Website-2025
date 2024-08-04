@@ -124,8 +124,7 @@ nav a {
 .banner{
     background-image: url(arya.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    padding: 4rem 4rem;
+    background-repeat: no-repeat;   
     background-attachment: fixed;
     width:100%;
     margin-top: 7rem; 
@@ -143,7 +142,7 @@ nav a {
 .banner-container {
     width: 100%;
     height: 100%;
-    padding: 10rem 3rem 5rem 0; 
+    padding: 10rem 3rem 7rem 0; 
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -177,14 +176,15 @@ nav a {
 .counter{
     background-color: black;
     text-align: center;
-    padding: 5rem;;
+    padding: 2rem;
 }
 
 .timer{
     color: #ffffff;
+    font-size: 20px;
 }
 #countdown {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     padding: 0.5rem;
@@ -414,6 +414,7 @@ nav a {
     top: 0;
     left: 0;
     right: 0;
+    padding: 1rem 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-shadow: 0 4px 8px -4px;
     background-color:  #4D36A9;
@@ -424,6 +425,7 @@ nav a {
     display: flex;
     list-style: none;
     margin: 0;
+    font-size: 1.5rem;
     animation: scroll 25s infinite linear;
 }
 
