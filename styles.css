@@ -5,11 +5,12 @@
 }
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #CCC6E6; /* White background */
-    color: #4D36A9; /* Black text */
+    background-color: #CCC6E6; 
+    color: #4D36A9; 
     margin-top: 8rem;
 }
-/* navbar styles */
+
+
 nav {
     background-color: #ffffff;
     color:#4D36A9; 
@@ -176,15 +177,13 @@ nav a {
 .counter{
     background-color: black;
     text-align: center;
-    padding: 2rem;
+    padding: 2rem;;
 }
-
 .timer{
     color: #ffffff;
-    font-size: 20px;
 }
 #countdown {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
     padding: 0.5rem;
@@ -224,14 +223,12 @@ nav a {
 }
 
 .text1{
-    /* font-size: calc(0.5rem + 0.7vw); */
     color: rgb(82,66,147);
     font-size: calc(0.5rem + 0.7vw);
     font-weight: 400;
 }
 
 
-/* common styles */
 .container{
     padding: 0 2rem;
     margin-bottom: 80px;
@@ -258,9 +255,6 @@ nav a {
     margin: 10px 0;
 }
 
-
-
-/* about-institute styles */
 .about-institute{
     display:flex;
     padding: 0 0 0.1rem 0;
@@ -283,8 +277,6 @@ nav a {
     font-size: calc(0.6rem + 0.8vw);
 }
 
-
-/* committe styles */
 .heading-secondary{
     font-weight: bold;
     color:rgb(82,66,147);
@@ -299,7 +291,7 @@ nav a {
     transition: box-shadow 0.3s ease;
 }
 .card:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Adjust the shadow on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
 }
 .card-name{
     color:rgb(38,21,119);
@@ -359,13 +351,6 @@ nav a {
     }
 }
 
-.rmsCard{
-}
-
-
-
-
-/* guidelines and review styles */
 .text{
     font-weight: 350;
     font-size: calc(0.7rem + 0.7vw);
@@ -418,52 +403,26 @@ nav a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-shadow: 0 4px 8px -4px;
     background-color:  #4D36A9;
-    overflow: hidden;
 }
 
 .news ul {
     display: flex;
     list-style: none;
+    padding: 0% 10%;
     margin: 0;
-    font-size: 1.5rem;
-    animation: scroll 25s infinite linear;
+    font-size: 1.25rem;
+
 }
 
 .news ul li {
-    white-space: nowrap;
     padding: 10px 24px;
-    color: #ffffff;
+    color: red;
     position: relative;
-}
-
-.news ul li::after {
-    content:"";
-    width: 1px;
-    height: 100%;
-    background: #ffffff;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.news ul li:last-child::after {
-    display: none;
 }
 
 @media screen and (max-width: 768px){
     .contact-container{
         flex-direction: column;
-    }
-}
-
-@keyframes scroll {
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(-1083px);
-
     }
 }
 
@@ -625,6 +584,85 @@ nav a {
     margin-bottom: 10px;
     border-radius: 50%;
 }
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color:#4D36A9;
+    margin: 15% auto; /* 15% from the top and centered */
+    color: #ffffff;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s; /* Fade-in animation */
+}
+
+.welcome-popup, .heading-popup{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.content-popup{
+    text-align: justify;
+}
+
+.news {
+    animation: pulse 2s infinite; /* Pulsing animation */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.news {
+    background-color:white;
+    border: 2px solid black;
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin: 20px 20px 0 20px; 
+    transition: background-color 0.3s ease;
+}
+
+.news:hover {
+    background-color:#ededed; /* Change background color on hover */
+}
+
+.springer-logo img{
+    width:90%;
+    height:auto;
+}
+
+
+
+
+
+
 
 
 

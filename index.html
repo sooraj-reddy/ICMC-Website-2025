@@ -13,50 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <a href="#"><img src="iitbh.png" alt="Your Logo"></a>
-        </div>
-        <div class="hamburger">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </div>
-        <div class="navbar-right">
-            <a href="index.html">HOME</a>
-            <div class="dropdown">
-                <a href="#">ABOUT</a>
-                <div class="dropdown-content">
-                    <a href="about_iitbhilai.html" >Institute</a>
-                    <a href="about_mathdept.html" >Math Department</a>
-                    <a href="about_icmc.html" >ICMC</a>
-                </div>
-            </div>
-            <a href="speakers.html" >SPEAKERS</a>
-            <a href="committee.html" >COMMITTEE</a>
-            <div class="dropdown">
-                <a href="#">CALL FOR PAPERS</a>
-                <div class="dropdown-content">
-                    <a href="contribution_tracks.html" >Contribution Tracks</a>
-                    <a href="author_guidelines.html" >Author Guidelines</a>
-                    <a href="review.html" >Review Process</a>
-                    <a href="https://cmt3.research.microsoft.com/ICMC2025" target="_blank">Submit Your Paper</a>
-                    <a href="#">Accepted Papers</a>
-                </div>
-            </div>
-            <a href="speakers.html" >REGISTRATION</a>
-            <a href="past_editions.html" >PAST EDITIONS</a>
-            <div class="dropdown">
-                <a href="#">VENUE</a>
-                <div class="dropdown-content">
-                    <a href="#">IIT BHILAI</a>
-                    <a href="#">How To Reach?</a>
-                    <a href="#">Accomodation</a>
-                </div>
-            </div>
-            <a href="contact-us.html" >CONTACT US</a>
-        </div>
-    </nav>
+    <div id="header"></div>
+
     <div class="banner">
         <div class="banner-container">
             <h1 class="main-heading">11th International Conference on Mathematics and Computing</h1>
@@ -65,10 +23,23 @@
         </div>
         <div class="news">
             <ul>
-                <li>
-                    Note: Conference proceedings of all past editions of ICMC was published in Springer. Proceedings of current edition (ICMC 2025) will be published through a springer series (Waiting for approval).
+                <li class="springer-logo">
+                        <img src="springer-logo.png" alt="Springer">
+                </li>
+                <li class="news-item">
+                    All Accepted and presented papers will be published by Springer in a book series of “Lecture Notes in Networks and Systems” (Confirmed) That Is Indexed By SCOPUS, INSPEC, WTI Frankfurt EG, ZbMATH, SCImago, Web of Science. The Springer has Accepted for Publication of the conference proceedings by two volumes in their book series.
                 </li>
             </ul>
+        </div>
+        <div id="newsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1 class="welcome-popup">Welcome to ICMC 2025</h1>
+                <h2 class="heading-popup">Latest News</h2>
+                <p class="content-popup">
+                    All Accepted and presented papers will be published by Springer in a book series of “Lecture Notes in Networks and Systems” (Confirmed) That Is Indexed By SCOPUS, INSPEC, WTI Frankfurt EG, ZbMATH, SCImago, Web of Science. The Springer has Accepted for Publication of the conference proceedings by two volumes in their book series.
+                </p>
+            </div>
         </div>
     </div>
         
@@ -240,67 +211,58 @@
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="quick-links">
-        <ul class="menu">
-        <div class="main-menu">
-            <li class="main-footer-header">ICMC 2025</li>
-        <p class="main-footer-content">11th International Conference on Mathematics and Computing</p>
-        </div>
-        <div class="icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-    
-        </ul>
-        <ul class="menu">
-            <li class="footer-header">Quick Links</li>
-            <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="speakers.html" >Speakers</a></li>
-            <li class="menu__item"><a class="menu__link" href="committee.html" >Committee</a></li>
-            <li class="menu__item"><a class="menu__link" href="past_editions.html" >Past Editions</a></li>
-            <li class="menu__item"><a class="menu__link" href="registration.html" >Registration</a></li>
-      
-          </ul>
-          <ul class="menu">
-            <li class="footer-header">Contact Us</li>
-            <li class="menu__item"><i class="fa-solid fa-user"></i> Arnab Patra </li>
-            <li class="menu__item"><i class="fa-solid fa-location"></i> IIT Bhilai </li>
-            <li class="menu__item"><i class="fa-solid fa-envelope"></i> arnabp@iitbhilai.ac.in </li>
-
-          </ul>
-          
-        </div>
-        <p class="copy"> &copy;2024 IIT Bhilai | All Rights Reserved</p>
-    </footer>
-    
+    <div id="footer"></div>
     <script>
-        // Set the date to countdown to
+        document.getElementById('header').innerHTML = fetch('header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header').innerHTML = data;
+                            document.querySelector('.hamburger').addEventListener('click', function() {
+                            document.querySelector('.navbar-right').classList.toggle('active');
+            });
+        });
+
+        document.getElementById('footer').innerHTML = fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data); 
+
+    </script>
+    <script>
         const countdownDate = new Date('2025-01-09T00:00:00').getTime();
 
-        // Update the countdown every second
-        const countdown = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = countdownDate - now;
+// Update the countdown every second
+const countdown = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
 
-            // Calculate days, hours, minutes, and seconds
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            document.getElementById('countdown').innerHTML = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
-            if (distance < 0) {
-                clearInterval(countdown);
-                document.getElementById('countdown').innerHTML = 'It is time';
+    // Calculate days, hours, minutes, and seconds
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById('countdown').innerHTML = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
+    if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById('countdown').innerHTML = 'It is time';
+    }
+}, 1000);
+    </script>
+    <script>
+        const modal = document.getElementById("newsModal");
+        const span = document.getElementsByClassName("close")[0];
+
+        window.onload = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
             }
-        }, 1000);
-
-        document.querySelector('.hamburger').addEventListener('click', function() {
-            document.querySelector('.navbar-right').classList.toggle('active');
-        });
+        }
     </script>
     
 </body>
