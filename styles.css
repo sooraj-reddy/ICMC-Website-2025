@@ -129,6 +129,7 @@ nav a {
     background-attachment: fixed;
     width:100%;
     margin-top: 7rem; 
+    padding-bottom: 2rem;
 }
 
 .mathDept{
@@ -396,9 +397,9 @@ nav a {
 }
 
 .news {
-    top: 0;
+    /* top: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     padding: 1rem 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-shadow: 0 4px 8px -4px;
@@ -408,16 +409,34 @@ nav a {
 .news ul {
     display: flex;
     list-style: none;
-    padding: 0% 10%;
+    padding: 0% 5%;
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    align-items: center;
 
 }
 
 .news ul li {
-    padding: 10px 24px;
-    color: red;
+    /* padding: 10px 24px; */
+    color: rgb(38,21,119);
     position: relative;
+}
+
+.springer-logo {
+    flex: 0 0 8%; 
+    display: flex;
+    justify-content: center; 
+}
+
+.springer-logo img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.news-item {
+    flex: 1; 
+    padding-left: 20px; 
+    color: white; 
 }
 
 @media screen and (max-width: 768px){
@@ -641,7 +660,7 @@ nav a {
 
 .news {
     background-color:white;
-    border: 2px solid black;
+    border: 2px solid rgb(82,66,147);
     border-radius: 10px; 
     padding: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
