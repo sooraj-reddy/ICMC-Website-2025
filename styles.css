@@ -649,6 +649,7 @@ nav a {
 
 
 .content-popup{
+    font-size: 1.3rem;
     text-align: justify;
 }
 
@@ -686,7 +687,8 @@ nav a {
 }
 
 .reg-note{
-    font-size: medium;
+    /* font-size: medium; */
+    font-size: 1.2rem;
     font-weight: 900;
     margin-top: 30px;
 }
