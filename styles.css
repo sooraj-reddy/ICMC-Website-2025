@@ -693,6 +693,29 @@ nav a {
     margin-top: 30px;
 }
 
+.circular-logo {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    background: none; 
+    border: none; 
+}
+
+.card-container1-logo, .logo-link, .card2 {
+    background: none; 
+    padding: 0;
+    box-shadow: none;
+    border: none;
+}
+
+
+.card2 img {
+    display: block;
+    margin: 0 auto; /* Centers the image within its container */
+}
+
+
 
 
 
