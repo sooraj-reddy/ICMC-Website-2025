@@ -712,7 +712,8 @@ nav a {
 
 .card2 img {
     display: block;
-    margin: 0 auto; /* Centers the image within its container */
+    margin: 0 auto;
+    height:200px;
 }
 
 
