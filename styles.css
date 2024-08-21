@@ -355,6 +355,7 @@ nav a {
 .text{
     font-weight: 350;
     font-size: calc(0.7rem + 0.7vw);
+    text-align: justify;
 }
 .row1{
     display: flex;
@@ -715,6 +716,8 @@ nav a {
     margin: 0 auto;
     height:200px;
 }
+
+
 
 
 
