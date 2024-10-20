@@ -686,22 +686,6 @@ nav a {
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.reg-header1{
-    font-size:xx-large;
-    font-weight: bold;
-    text-align: left;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-.qrcode{
-    max-height:300px;
-    margin: auto;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-
-}
 
 .reg-note{
     /* font-size: medium; */
