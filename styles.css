@@ -733,6 +733,27 @@ nav a {
     height:200px;
 }
 
+.location{
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    align-items: center;
+    padding: 20px;
+}
+
+.location iframe{
+    height: 300px;
+    width: 1000px;
+}
+
+.location img{
+    height: 300px;
+    width: 300px;
+}
+
+.reach{
+    padding: 50px;
+}
 
 
 
