@@ -10,6 +10,11 @@ body {
     margin-top: 8rem;
 }
 
+.poster img {
+    width: 95%;
+    height: auto; 
+    margin-top: 4%;
+}
 
 nav {
     background-color: #ffffff;
@@ -755,17 +760,6 @@ nav a {
     padding: 50px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .layout {
     display: flex;
     gap: 20px;
@@ -869,6 +863,7 @@ nav a {
 .legend-item {
     margin-bottom: 5px;
 }
-  
+
+
   
   
