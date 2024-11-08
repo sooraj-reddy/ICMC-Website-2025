@@ -237,6 +237,12 @@ nav a {
     padding: 0 1rem;
 }
 
+.table-row{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
 .logo1 img {
     width:100%;
     height:auto;
@@ -247,8 +253,8 @@ nav a {
 
 .text1{
     color: rgb(82,66,147);
-    font-size: calc(0.5rem + 0.7vw);
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 
@@ -931,6 +937,21 @@ nav a {
     }
     .organisers{
         padding: 2rem;
+    }
+    .table-row{
+        flex-direction: column;
+    }
+    .about-col .heading1{
+        margin: 20px 0;
+    }
+    .about-cont{
+        padding: 2rem;
+    }
+    .text1{
+        font-size: 14px;
+    }
+    .logo1 img{
+        width: 75%;
     }
 }
   
