@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="mathDept">
     <div id="header"></div>
 
-    <div class="mathDept">
-        <div class="container">
+    
+        <div class="mathDeptInfo">
             <div class="row">
                 <div class="col">
                     <div class="titleStyle1">ABOUT</div>
@@ -34,8 +35,9 @@
                 </p>
             </div>
         </div>
-    </div>
+    
     <div id="footer"></div>
+</div>
     <script>
         document.getElementById('header').innerHTML = fetch('header.html')
             .then(response => response.text())
