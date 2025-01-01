@@ -339,15 +339,22 @@ nav a {
 }
 
 .abstract{
-    color:rgb(38,21,119);
-    font-size: 1.2rem;
+    background-color:rgb(38,21,119);
+    color: #fff;
+    font-size: 1rem;
     font-weight: 550;
     line-height: normal;
     margin: 1rem;
     text-decoration: none;
     border: 1px solid black;
-    padding: 5px;
+    padding: 7px;
     border-radius: .5rem;
+    transition: rgb(151, 145, 182) 0.3s, color 0.3s;
+}
+
+.abstract:hover {
+    background-color:  #CCC6E6; 
+    color: rgb(38,21,119); /* Optional: Change text color on hover */
 }
 
 .card-description{
