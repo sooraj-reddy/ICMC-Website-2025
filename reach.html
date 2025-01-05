@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header"> </div>
+    <div id="container1">
+        <div class="reach">
+        <div class="row1">
+            <div class="col">
+                <div class="titleStyle1">How to reach</div>
+                <div class="titleStyle2">IIT Bhilai</div>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="col location">
+                <div>
+                    <h4>IIT Bhilai’s campus is situated in Kutelabhata village of Durg district</h4>
+                    <h5>The address is as follows: IIT Bhilai, Kutelabhata Village, Durg District, Bhilai-49001, Chhattisgarh. One can reach Bhilai via air, train, or road.</h5>
+                </div>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.6175251911377!2d81.31628207613554!3d21.24701018045757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293d6791e5f399%3A0xfb39e72b5f4501f5!2sIndian%20Institute%20of%20Technology%20Bhilai!5e0!3m2!1sen!2sin!4v1730210536754!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="row1">
+            <div class="col">
+            <!-- <div class="titleStyle1">How to reach</div> -->
+            <div class="titleStyle2">Transportation</div>
+            <div class="divider"></div>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="col location">
+                <img src="flight.png" alt="Flight">
+                <div>
+                    <h4>Swami Vivekanand Airport, Raipur, is the nearest airport to the city of Bhilai, roughly
+                        48 km away, and it takes nearly 1.5 hours to reach. The airport is 53 km away from IIT
+                        Bhilai’s campus.
+                        </h4>
+                    <h5>After arriving at the airport, one can use other modes of transportation to reach the campus,
+                        such as:
+                        Intercity buses from Raipur to Bhilai are frequent, so one can take a bus from
+                        Raipur to Bhilai.
+                        One can also take an authorized or prepaid taxi from the airport directly to the
+                        campus.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="col location">
+                <img src="train.png" alt="Train">
+                <div>
+                    <h4>Durg Railway Junction is 9 km from the campus and takes 15-20 minutes to reach. After arriving at the railway station, various transport facilities like autorickshaws can be availed to reach the campus.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="col location">
+                <img src="road.png" alt="Road">
+                <div>
+                    <h4>The campus is 5 km away from the Great Eastern Highway. The campus is wellconnected by roadways. Durg Bus Stand is 8.2 km away from the campus.</h4>
+                    <br>
+                    <h4>* Cab services</h4>
+                    <h5>Avinash Cab services: 99938 61219</h5>
+                    <h5>Naveen Cab services: 78690 66348</h5>
+                    <h5>Bhilai Smart Cab services: 90395 89323, 90396 89323</h5>
+                    <h5></h5>
+                </div>
+            </div>
+        </div>
+        <br>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script>
+        document.getElementById('header').innerHTML = fetch('header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header').innerHTML = data;
+                            document.querySelector('.hamburger').addEventListener('click', function() {
+                            document.querySelector('.navbar-right').classList.toggle('active');
+            });
+        });
+
+        document.getElementById('footer').innerHTML = fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+</html>
